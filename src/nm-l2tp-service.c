@@ -731,7 +731,7 @@ nm_l2tp_config_write (NML2tpPlugin *plugin,
 		write_config_option (fd, "  auto=add\n");
 		write_config_option (fd, "  type=transport\n");
 
-		write_config_option (fd, "  authby=secret\n");
+		write_config_option (fd, "  authby=psk\n");
 		write_config_option (fd, "  keyingtries=0\n");
 		write_config_option (fd, "  left=%%defaultroute\n");
 		if (l2tp_port_is_free) {
